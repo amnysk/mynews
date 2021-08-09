@@ -1,0 +1,30 @@
+PHP Fatal error:  Cannot declare class CreateNewsTable, because the name is already in use in /home/ec2-user/environment/mynews/database/migrations/2021_07_24_101345_create_news_table.php on line 31
+
+   Symfony\Component\Debug\Exception\FatalErrorException  : Cannot declare class CreateNewsTable, because the name is already in use
+
+  at /home/ec2-user/environment/mynews/database/migrations/2021_07_24_101345_create_news_table.php:31
+    27|     public function down()
+    28|     {
+    29|         Schema::dropIfExists('news');
+    30|     }
+  > 31| }
+    32|
+
+
+   Whoops\Exception\ErrorException  : Cannot declare class CreateNewsTable, because the name is already in use
+
+  at /home/ec2-user/environment/mynews/database/migrations/2021_07_24_101345_create_news_table.php:31
+    27|     public function down()
+    28|     {
+    29|         Schema::dropIfExists('news');
+    30|     }
+  > 31| }
+    32|
+
+  Exception trace:
+
+  1   Whoops\Run::handleError("Cannot declare class CreateNewsTable, because the name is already in use", "/home/ec2-user/environment/mynews/database/migrations/2021_07_24_101345_create_news_table.php")
+      /home/ec2-user/environment/mynews/vendor/filp/whoops/src/Whoops/Run.php:486
+
+  2   Whoops\Run::handleShutdown()
+      [internal]:0
